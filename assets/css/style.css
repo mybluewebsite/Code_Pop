@@ -1,0 +1,150 @@
+/* Fun, Creative, and Punchy CSS for Website Showcase */
+
+body {
+    background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    color: #222;
+    min-height: 100vh;
+}
+
+header {
+    background: #ff6f61;
+    color: #fff;
+    padding: 2rem 0 1.5rem 0;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(255, 111, 97, 0.2);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 2px 2px 0 #fff3e0, 4px 4px 0 #ffb199;
+    animation: bounce 1.2s;
+}
+
+@keyframes bounce {
+    0%   { transform: translateY(-80px);}
+    60%  { transform: translateY(20px);}
+    80%  { transform: translateY(-10px);}
+    100% { transform: translateY(0);}
+}
+
+nav {
+    margin: 1.5rem 0;
+}
+
+nav a {
+    color: #fff;
+    background: #ffb199;
+    padding: 0.6em 1.2em;
+    margin: 0 0.5em;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(255, 177, 153, 0.2);
+}
+
+nav a:hover {
+    background: #fff;
+    color: #ff6f61;
+    transform: scale(1.08) rotate(-2deg);
+}
+
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 32px;
+    box-shadow: 0 8px 32px rgba(252, 182, 159, 0.15);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(120deg, #fcb69f 0%, #ffecd2 100%);
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(255, 111, 97, 0.08);
+    padding: 2rem 1.5rem;
+    width: 320px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.04) rotate(-1deg);
+    box-shadow: 0 8px 32px rgba(255, 111, 97, 0.18);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: #ff6f61;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 0 #fff3e0;
+}
+
+.card p {
+    color: #444;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.card .btn {
+    display: inline-block;
+    background: #ff6f61;
+    color: #fff;
+    padding: 0.6em 1.2em;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(255, 111, 97, 0.15);
+    transition: background 0.2s, transform 0.2s;
+}
+
+.card .btn:hover {
+    background: #ffb199;
+    color: #ff6f61;
+    transform: scale(1.08);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    color: #fff;
+    background: #ff6f61;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    margin-top: 3rem;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    box-shadow: 0 -4px 16px rgba(255, 111, 97, 0.15);
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+    .card {
+        width: 90%;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: #ffecd2;
+}
+::-webkit-scrollbar-thumb {
+    background: #ffb199;
+    border-radius: 10px;
+}
